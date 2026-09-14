@@ -1,23 +1,24 @@
 import java.util.Scanner;
 
-public class FloatingPointNumbers {
+public class Main {
 
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
 
-        double total = 0.0;
+        double number;
+        double total = 0;
         double average;
-        double maximum = 0.0;
-        double minimum = 0.0;
+        double maximum = 0;
+        double minimum = 0;
         double interest;
 
         int count = 0;
 
         while (count < 5) {
 
-            System.out.print("Enter floating-point value " + (count + 1) + ": ");
-            double number = input.nextDouble();
+            System.out.print("Enter a number: ");
+            number = input.nextDouble();
 
             // Set the first number as both the maximum and minimum
             if (count == 0) {
